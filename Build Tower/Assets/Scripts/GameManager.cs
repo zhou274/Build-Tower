@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
 	}
 	public void Continue()
 	{
-        ShowVideoAd("192if3b93qo6991ed0",
+        ShowVideoAd("2ooc1nkjb7a64bl294",
             (bol) => {
                 if (bol)
                 {
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
 		//Time.timeScale = 1;
 		PlayerDied();
         //SceneManager.LoadScene("Main");
-        ShowInterstitialAd("1lcaf5895d5l1293dc",
+        ShowInterstitialAd("21ga1g2016chf3286m",
             () => {
                 Debug.LogError("--插屏广告完成--");
 

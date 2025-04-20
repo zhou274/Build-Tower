@@ -16,37 +16,6 @@ public class CebianlanManager : MonoBehaviour
     private void Start()
     {
 
-        if (!PlayerPrefs.HasKey("FirstStart"))
-        {
-            // 执行首次启动时的操作
-            Debug.Log("首次启动应用程序");
-
-            // 在这里添加你需要在首次启动时执行的代码
-
-            // 设置键"FirstStart"，表示不是首次启动了
-            PlayerPrefs.SetInt("FirstStart", 1);
-            PlayerPrefs.Save(); // 确保保存设置
-            CebainlanUI.SetActive(true);
-        }
-        else
-        {
-            Debug.Log("不是首次启动应用程序");
-            CebainlanUI.SetActive(false);
-        }
-
-
-
-
-
-        clickid = "";
-
-
-        getClickid();
-
-
-        Debug.Log("<-clickid-> " + clickid);
-
-        apiSend("active", clickid);
 
         showGridGame();
 
@@ -59,7 +28,7 @@ public class CebianlanManager : MonoBehaviour
         if (mStarkGridGamePanelManager != null)
         {
             JsonData query = new JsonData();
-            query["tt38e84e55a7dc353c02"] = "";
+            query["tt78bb0e06e7b1a4bf07"] = "";
             JsonData position = new JsonData();
             position["top"] = 150;
             position["left"] = 30;
